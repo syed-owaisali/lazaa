@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,
+
+
+body{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw 10.5vw;   
+    position: fixed;
+    height: 12vh;
+    background-color: #111;
+    z-index: 10;
+
+
+}
+
+
+.navpart1{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding:1vh 0vh;
+    position:relative;
+    z-index: 10;
+
+   
+    
+
+}
+
+#nav-elem h4{
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2vw;
+
+}
+
+#nav-elem h5 span{
+    font-size: 0.87vw;
+    font-weight: 600;
+    display: inline-block;
+    transform: translateY(25px);
+
+}
+
+#nav-elem h5{
+    margin-bottom: 0.5vw;
+    display: none;
+    overflow: hidden;
+    
+
+}
+.nav-bottum{
+    width: 80%;
+    height: 0vh;
+    position: absolute;
+    background-color:#111;
+    top: 100%;
+    border-bottom: 1px solid white;
+    z-index: 9;
+
+
+}
+
+
+nav button{
+    font-size: 1vw;
+    padding: 0.5vw 1vw;
+    border-radius: 10vw;
+    background-color: rgb(42, 243, 136);
+    font-weight: 400;
+    
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1.4vw;
+}
+.page1 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 7vw ;
+
+}
+.page1 p{
+    padding-bottom: 1vw;
+    font-size: 1.6vw;
+
+}
+
+.head{
+    margin-top: 8vh;
+}
+.page1 span{
+    color: rgb(56, 51, 51);
+}
+#ph{
+    text-align: center;
+    font-size: 1.2vw;
+    padding-top: 1vw;
+}
+.noving-div{
+    position: absolute;
+    bottom: 1vh;
+    width: 40vw;
+    white-space: nowrap;
+    padding: 2vh;
+    overflow: hidden;
+   
+}
+
+.move {
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ 
+}
+
+.move img{
+    width: 4vh;
+    height: 4vh;
+    margin: 0vw 1vw;
+  
+
+}
+
+@keyframes mobe {
+    
+    0%{
+
+       transform: translateX(0);
+}
+  100%{
+
+transform: translateX(-100%);
+
+}
+
+
+}
+
+.blurL{
+    height: 100%;
+    width: 17%;
+    background: linear-gradient(to right, #111, transparent );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.blurR{
+    height: 100%;
+    width: 17%;
+    background: linear-gradient(to right, transparent, #111 );
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 0vw;
+    padding-bottom: 7vw;
+    padding-left: 10.5vw;
+    padding-right: 9.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+}
+
+.page2-left{
+    height: 100%;
+    width: 40%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vw 0vw;
+
+}
+
+.page2-left p{
+    font-size: 1vw;
+    font-weight: 400;
+ 
+}
+
+.page2-left h5{
+    font-size: 1vw;
+    width: 60%;
+    font-weight: 400;
+
+
+}
+.page2-right{
+    height: 100%;
+    width: 50%;
+
+}
+
+.rightelem{
+    position: relative;
+    padding-top: 2vw;
+    padding-bottom: 7vw;
+    border-bottom: 1px solid #333;
+
+}
+.rightelem h2{
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+.rightelem img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+
+}
+
+.image{
+    background-color: #111;
+}
